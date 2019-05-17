@@ -1,0 +1,64 @@
+.containerPage {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+}
+.containerSocialLogins {
+  width: 50vw;
+  height: 350px;
+  margin: 8% auto 0px auto; 
+  text-align: center;
+  padding: 20px;
+  box-shadow: -1px 13px 31px -6px rgba(0,0,0,0.75);
+}
+.ButtonLogin {
+  margin: 5% auto;
+  padding: 20px;
+  max-width: 450px;
+  text-align: start;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, 
+  rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+}
+.btnGoogle {
+  background-color: white;
+  color: black;
+}
+.btnFacebook {
+  background-color: #3b5998;
+  color: white;
+   
+}
+
+
+
+@media (max-width:800px){
+  .containerSocialLogins{
+    width: 90vw;
+    height: 350px;
+  }
+}
+@media (max-width:500px){
+  
+  .textBtnLogin {
+    display: none;
+  }
+  .btnGoogle {
+    background-color: #db3236;
+    color: white;
+  }
+  .ButtonLogin {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
